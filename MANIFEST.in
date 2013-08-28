@@ -1,0 +1,6 @@
+graft test/data
+include test/util.py
+include ttname.py
+include LICENSE
+include ttname.1.md
+include ttname.1

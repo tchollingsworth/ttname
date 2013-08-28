@@ -1,0 +1,7 @@
+*.egg-info/
+cover/
+dist/
+*.pyc
+*.pyo
+ttname.1
+.coverage
