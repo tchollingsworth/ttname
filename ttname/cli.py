@@ -162,7 +162,7 @@ class TTNameCLI(object):
             if self.args.all:
                 names = self.table.getNameFromAll(nameID)
                 for n in names:
-                    print '{0}: {1}'.format(info.trip(n), n.string)
+                    print u'{0}: {1}'.format(info.trip(n), n.string)
                     
             else:
                 print self.table.getName(nameID, self.platform, 
@@ -176,7 +176,7 @@ class TTNameCLI(object):
                     print '=' * len(info.trip(names[0]))
                     
                     for n in names:
-                        print '{0}: {1}'.format(info.name(n), n.string)
+                        print u'{0}: {1}'.format(info.name(n), n.string)
                             
                     print
             
@@ -185,7 +185,7 @@ class TTNameCLI(object):
                                               self.lang)
                 
                 for n in names:
-                    print '{0}: {1}'.format(info.name(n), n.string)
+                    print u'{0}: {1}'.format(info.name(n), n.string)
 
     def write(self):
         if self.args.outfile is not None:
